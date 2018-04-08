@@ -28,7 +28,7 @@ for index in range(1, len(brackets)):
 
     total_tax += taxable * rate
 
-    if income < limit:
+    if income <= limit:
         print 'this is the last bracket for income:', income
         break
 
