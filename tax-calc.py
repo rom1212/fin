@@ -16,7 +16,6 @@ income = 500000
 print 'income:', income
 
 total_tax = 0.0
-rem = income
 for index in range(1, len(brackets)):
     prev_limit = brackets[index-1][1]
     rate, limit = brackets[index]
