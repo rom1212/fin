@@ -41,8 +41,13 @@ func main() {
 	for i, _ := range sp_dec {
 		sp_inc = append(sp_inc, sp_dec[len(sp_dec)-i-1])
 	}
+
 	fmt.Println("sp_dec:", sp_dec)
 	fmt.Println("sp_inc:", sp_inc)
+
+	start := 100000.0
+	// normal value
+	normal(sp_inc, start)
 }
 
 func normal(sp [][]float64, start float64) {
@@ -51,5 +56,5 @@ func normal(sp [][]float64, start float64) {
 		fmt.Println("rate:", rate)
 		value = (1 + rate[1]/100.0) * value
 	}
-	fmt.Println("normal value:", value)
+	fmt.Printf("normal value: %f", value)
 }
