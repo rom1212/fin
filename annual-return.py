@@ -57,6 +57,6 @@ for r in sp_inc:
     elif rate > cap:
         real_rate = cap
 
-    print 'rate:', rate, ', real rate:', real_rate
     box = (1 + real_rate) * box
+    print 'box value:', box, ', real rate:', real_rate, ', rate:', rate
 print 'box:', box
