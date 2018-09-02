@@ -23,6 +23,7 @@ i: 18, normal value: 2109346.766519, boxed  value: 1635304.620280
 normal average value: 2895029.159044, over 30 years
 boxed  average value: 1643864.280749, over 30 years
 */
+// https://play.golang.org/p/pNiE25_1px8
 package main
 
 import (
