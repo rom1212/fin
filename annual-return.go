@@ -71,18 +71,20 @@ func box(sp [][]float64, start float64) float64 {
 	bot := 0.007
 	value := start
 	for _, r := range sp {
+
 		rate := r[1] / 100.00
 		if rate > cap {
 			rate = cap
 		} else if rate < 0 {
 			rate = bot
 		}
-		fmt.Printf("year rate: %v, box rate: %f\n", r, rate)
 		value = (1 + rate) * value
+		fmt.Printf("box value: %f, box rate: %f, year rate: %v\n", value, rate, r)
 	}
 	fmt.Printf("box value: %f\n", value)
 	return value
 }
 
+// https://play.golang.org/p/TH7hliJZpNG
 // normal value: 2109346.766519
 // boxed  value: 1635304.620280
