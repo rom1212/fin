@@ -24,6 +24,7 @@ normal average value: 2895029.159044, over 30 years
 boxed  average value: 1643864.280749, over 30 years
 */
 // https://play.golang.org/p/pNiE25_1px8
+// https://en.wikipedia.org/wiki/S%26P_500_Index
 package main
 
 import (
