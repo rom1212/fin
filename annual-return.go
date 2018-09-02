@@ -5,7 +5,6 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello, playground")
 	sp_dec := [][]float64{
 		{2017, 21.83},
 		{2016, 11.96},
@@ -47,14 +46,43 @@ func main() {
 
 	start := 100000.0
 	// normal value
-	normal(sp_inc, start)
+	normal_value := normal(sp_inc, start)
+
+	// boxed value
+	boxed_value := box(sp_inc, start)
+
+	fmt.Printf("normal value: %f\n", normal_value)
+	fmt.Printf("boxed  value: %f\n", boxed_value)
 }
 
-func normal(sp [][]float64, start float64) {
+func normal(sp [][]float64, start float64) float64 {
 	value := start
-	for _, rate := range sp {
-		fmt.Println("rate:", rate)
-		value = (1 + rate[1]/100.0) * value
+	for _, r := range sp {
+		fmt.Println("year rate:", r)
+		rate := r[1] / 100.00
+		value = (1 + rate) * value
 	}
-	fmt.Printf("normal value: %f", value)
+	fmt.Printf("normal value: %f\n", value)
+	return value
 }
+
+func box(sp [][]float64, start float64) float64 {
+	cap := 0.15
+	bot := 0.007
+	value := start
+	for _, r := range sp {
+		rate := r[1] / 100.00
+		if rate > cap {
+			rate = cap
+		} else if rate < 0 {
+			rate = bot
+		}
+		fmt.Printf("year rate: %v, box rate: %f\n", r, rate)
+		value = (1 + rate) * value
+	}
+	fmt.Printf("box value: %f\n", value)
+	return value
+}
+
+// normal value: 2109346.766519
+// boxed  value: 1635304.620280
