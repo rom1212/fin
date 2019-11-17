@@ -1,7 +1,13 @@
 # Vanguard
+  * All ETF: https://investor.vanguard.com/etf/list#/etf/asset-class/month-end-returns
+    * VGT: https://investor.vanguard.com/etf/profile/VGT
+    * VUG: https://investor.vanguard.com/etf/profile/VUG
+    * VOO: https://investor.vanguard.com/etf/profile/VOO
+    * VNQ: https://investor.vanguard.com/etf/profile/VNQ
   * Vanguard US Growth Inv: https://finance.yahoo.com/quote/VWUSX/performance/
   * VIGAX: [Vanguard Growth Index Fund Admiral Shares](https://investor.vanguard.com/mutual-funds/profile/performance/vigax)
     * VUG (ETF): https://investor.vanguard.com/etf/profile/performance/vug 
+  
 
 # Research
   * https://www.forbes.com/sites/michaelfoster/2017/01/11/5-funds-that-crush-the-sp-500-and-pay-9-3-dividends/#48bbdbec16a9
