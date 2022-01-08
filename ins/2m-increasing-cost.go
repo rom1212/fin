@@ -72,4 +72,5 @@ func sum(data []int) int {
 
 // total:  6300839
 // This also works: awk '{print $5}' 2m-increasing.txt | sed 's/\$//g' | sed 's/,//g' | awk '{ sum += $1 } END { print sum }'
+// Age, End of policy year, Premium outlay, Net distributions, Total charges, Accumulation value, Cash value, Death benefit
 // https://go.dev/play/p/KUSgKs2VkfT
